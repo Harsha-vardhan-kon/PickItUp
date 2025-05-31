@@ -101,6 +101,9 @@ const Product = () => {
           >
             <BsShopWindow color='green' /> PickItUp
           </Typography>
+          <Typography sx={{position:'relative',top:'200px',right:'100px'}}>
+           <h1 style={{color:'black'}}>Shop smart. Shop fast. PickItUp</h1> 
+          </Typography>
 
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
             <TextField
@@ -119,7 +122,7 @@ const Product = () => {
               <SearchIcon />
             </IconButton>
           </Box>
-
+       
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
             <Button variant="contained" color="success" onClick={() => navigate('/login')}>
               Login
@@ -207,11 +210,11 @@ const Product = () => {
       <nav style={{ width: '100%', height: '150px', backgroundColor: '#FFFFFF', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <List sx={{ display: 'flex', flexDirection: 'row', gap: 4 }}>
           {[
-            { img: childrenwear, label: 'Children Wear', route: '/product/children' },
-            { img: saree, label: 'Saree', route: '/product/saree' },
-            { img: toys, label: 'Toys', route: '/product/toys' },
-            { img: laptops, label: 'Electronics', route: '/product/electronics' },
-            { img: serums, label: 'Beauty', route: '/product/beauty' },
+            { img: childrenwear, label: 'Children Wear', route: '/children' },
+            { img: saree, label: 'Saree', route: '/saree' },
+            { img: toys, label: 'Toys', route: '/toys' },
+            { img: laptops, label: 'Electronics', route: '/electronics' },
+            { img: serums, label: 'Beauty', route: '/beauty' },
           ].map((item, index) => (
             <ListItem key={index} disablePadding sx={{ width: '200px', height: '90px', position: 'relative' }}>
               <Link

@@ -52,8 +52,7 @@ const SignUpPage = () => {
         >
     <Box
       sx={{
-        width: 320,
-       
+        width: 320,    
         margin: '100px auto',
         padding: 3,
         border: '1px solid #ccc',

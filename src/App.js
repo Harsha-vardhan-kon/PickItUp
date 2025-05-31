@@ -7,6 +7,7 @@ import ForgetPage from './Components/ForgetPage/ForgetPage';
 import Iphone15 from './Components/Iphone15/Iphone15';
 import Cart from './Components/Cart/Cart';
 import { CartProvider } from './Components/Cart/CartProvider';
+import ChildrenWear from './Components/ChildrenWear/ChildrenWear';
 
 
 
@@ -24,7 +25,7 @@ const App = () => {
       <Route path='/login' element={<LoginPage/>}/>
       <Route path='/iphone15' element={<Iphone15/>}/>
       <Route path="/CartProvider" element={<CartProvider />} />
-
+      <Route path='children' element={<ChildrenWear/>}/>
     </Routes>
   );
 };
